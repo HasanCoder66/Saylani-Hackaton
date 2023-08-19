@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: rgb(64, 64, 97);">
+            <div class="col-9 ms-4   text-light "> Personal Blogging App</div>
+            <div class="col text-light"> Login</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col ">
+                <h3>
+                    Dashboard
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="post-area ">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="email" class="form-control" id="input-Title" placeholder="Write title..">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><a href="../home/home.html">Blogs
+                
+                    </a>
+            </label>
+                <textarea class="form-control" id="input-TextArea" rows="3"
+                    placeholder="What is in your mind..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" style="background-color: #7749f8;" id="publish-post">Publish
+                blog</button>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h4>
+                    Blogs
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 containerPost">
+        <div class="postedSection" style="width: 100%;">
+
+            <div class="card mb-3" style="width: 25%; line-height: 10px; border: none;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                       <a href="../editProfile/profile.html">
+                        <img src="https://www.svgrepo.com/show/13656/user.svg" class="img-fluid rounded-start" alt="..."
+                        width="80px" style="margin-top: 8px; margin-left: 5px;">
+                       </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">hello hasan</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti
+                reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur
+                accusantium, maiores voluptatem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti
+                reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur
+                accusantium, maiores voluptatem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a dolorum repellendus corrupti
+                reprehenderit iste amet beatae praesentium repellat, facere ipsum in deleniti suscipit dicta ea tenetur
+                accusantium, maiores voluptatem.
+            </p>
+            <div id="myLinks">
+                <a href="#" id="delete " class="me-5">Delete</a>
+                <a href="#" id="edit">Edit</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>
